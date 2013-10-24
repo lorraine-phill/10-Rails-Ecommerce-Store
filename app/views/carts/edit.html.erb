@@ -1,3 +1,11 @@
 <% @products.each do |product| %>
 	<p><%= product.name %> </p>
+	
+	<%= form_for current_cart, :method => :delete  do |f| %>
+		<%= f.hidden_field :product_id, value: product.id %>
+		<%= f.submit 'Remove from Cart' %>
+	<% end %>
+
 <% end %>
+
+

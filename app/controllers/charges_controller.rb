@@ -1,6 +1,7 @@
 class ChargesController < ApplicationController
 
 	def new
+		render layout: 'application'
 	end
 
 	def create

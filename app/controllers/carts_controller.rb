@@ -9,4 +9,10 @@ class CartsController < ApplicationController
 	def edit
 		@products =Cart.find(params[:id]).products
 	end
+
+	def destroy
+      Product.find(params[:cart][:product_id]).destroy 
+	  redirect_to '/'
+   end
+
 end

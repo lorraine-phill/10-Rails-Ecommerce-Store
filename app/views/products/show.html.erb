@@ -13,7 +13,7 @@
 	<div class='col-md-8'>
 		
 		<div>
-			<strong>Description:</strong> <%= @product.lg_desc %>
+			<strong>Long Description:</strong> <%= @product.lg_desc %>
 		</div>
 		<div class="item_count">
 			<%= form_for current_cart do |f| %>
@@ -25,7 +25,16 @@
 				<%= "#{current_cart.count} items selected" %>
 				<!--  <%= pluralize current_cart.count,'' %> -->
 			</div>
-			<%= link_to "edit cart", edit_cart_path(current_cart)%>
+
+
+			<div>
+				<%= link_to "Edit Cart", edit_cart_path(current_cart)%>
+			</div>
+			
+			<div>
+				<%= link_to "Checkout Cart", new_charge_path(current_cart)%>
+			</div>
+
 		</div>	
 
 	</div>
