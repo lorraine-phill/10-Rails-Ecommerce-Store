@@ -4,5 +4,9 @@ class Cart < ActiveRecord::Base
 	def count
 		products.count
 	end
+
+	def total
+		products.sum(:price)
+	end
 	
 end

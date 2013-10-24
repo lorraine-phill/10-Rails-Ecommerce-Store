@@ -8,7 +8,10 @@ class ApplicationController < ActionController::Base
 #Check and read for Rails best practices
   
   def current_cart
-  	Cart.find(session[:cart_id])
+  	Cart.find(session[:cart_id]) 
+  rescue ActiveRecord::RecordNotFound 
+    session[:cart_id] = nil
+    Cart.find(create_empty_cart)
   end
 
   def create_empty_cart

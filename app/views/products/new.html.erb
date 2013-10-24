@@ -3,14 +3,19 @@
 	<%= f.label :name %>
 	<%= f.text_field :name %>
 
-	<%= f.label :description, 'Description of your item' %>
+	<%= f.label :price %>
+	<%= f.text_field :price %>
+
+	<%= f.label :description, 'Short description' %>
 	<%= f.text_area :description %>
+
+	<%= f.label :lg_desc, 'Long description' %>
+	<%= f.text_area :lg_desc %>
 
 	<%= f.label :image %>
 	<%= f.file_field :image %>
 
 	<%= f.submit 'Create Product' %>
-
 	
 <% end %>
 

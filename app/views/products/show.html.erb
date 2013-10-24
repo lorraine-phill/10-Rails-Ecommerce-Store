@@ -1,24 +1,33 @@
 <h3><%= @product.name %> </h3>
 <div class="row">
 	<div class='col-md-4'>
-		<%= image_tag @product.image.url(:thumb), class: 'product_image'%>
-		Description: <%= @product.description %>
-		<p>Price: <%= @product.price%></p>	
-	</div>
-		
-	<div class="">
-		Description: <%= @product.lg_desc %>
-	</div>
-	<div class="item_count">
-		<%= form_for current_cart do |f| %>
-			<%= f.hidden_field :product_id, value: @product.id %>
-			<%= f.submit 'Add to Cart' %>
-		<% end %>
-	
-		<div class='item-count'>
-			<%= "#{current_cart.count} items selected" %>
-			<!--  <%= pluralize current_cart.count,'' %> -->
+		<div>
+			<%= image_tag @product.image.url(:medium), class: 'product_image'%>
 		</div>
-		<%= link_to "edit cart", edit_cart_path(current_cart)%>
-	</div>	
+		<div>
+			<strong>Description: </strong><%= @product.description %>
+			<p><strong>Price: </strong><%= number_to_currency @product.price, unit: '£' %></p>	
+		</div>
+	</div>
+
+	<div class='col-md-8'>
+		
+		<div>
+			<strong>Description:</strong> <%= @product.lg_desc %>
+		</div>
+		<div class="item_count">
+			<%= form_for current_cart do |f| %>
+				<%= f.hidden_field :product_id, value: @product.id %>
+				<%= f.submit 'Add to Cart' %>
+			<% end %>
+		
+			<div class='item-count'>
+				<%= "#{current_cart.count} items selected" %>
+				<!--  <%= pluralize current_cart.count,'' %> -->
+			</div>
+			<%= link_to "edit cart", edit_cart_path(current_cart)%>
+		</div>	
+
+	</div>
+
 </div>
