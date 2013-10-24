@@ -8,6 +8,5 @@ class CartsController < ApplicationController
 
 	def edit
 		@products =Cart.find(params[:id]).products
-
 	end
 end
