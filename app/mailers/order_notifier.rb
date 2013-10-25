@@ -4,7 +4,9 @@ class OrderNotifier < ActionMailer::Base
 	
 	def confirmation_email(number_of_items)
 		@number_of_items = number_of_items
-		mail(to: 'shopper@example.com', subject: 'Order Confirmation')
+		mail(to: ENV['EMAIL_ADDRESS'], subject: 'Order Confirmation')
+
+		
 	end
 
 end
