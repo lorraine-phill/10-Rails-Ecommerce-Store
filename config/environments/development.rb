@@ -21,9 +21,9 @@ EcommerceApp::Application.configure do
          :authentication => :plain,
          :address => "smtp.mailgun.org",
          :port => 587,
-         :domain => "my-mailgun-domain.com",
-         :user_name => "postmaster@my-mailgun-domain.com",
-         :password => ENV['MAILGUN_PASSWORD'],
+         :domain => "lp.com",
+         :user_name => "postmaster@lp.com",
+         :password => "5fjirv944zk1"
     }
 
   # Print deprecation notices to the Rails logger.

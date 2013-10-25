@@ -19,7 +19,7 @@ describe 'the cart' do
 
 	let(:iphone) {FactoryGirl.create(:product)}
 
-	it 'should initiall be empty' do
+	it 'should initially be empty' do
 		visit product_path(iphone)
 		expect(page).to have_css '.item_count', text: '0 items'
 	end

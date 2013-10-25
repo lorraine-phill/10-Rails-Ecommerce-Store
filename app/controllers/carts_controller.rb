@@ -11,7 +11,7 @@ class CartsController < ApplicationController
 	end
 
 	def destroy
-      Product.find(params[:cart][:product_id]).destroy 
+      current_cart.products.delete(Product.find(params[:cart][:product_id]))
 	  redirect_to '/'
    end
 
