@@ -20,24 +20,26 @@
 	padding-top: 15px;
 	text-align: right;
 	float: right;
-	margin-right: -50px;
-
+	margin-right: -30px;
 }
 .navbar-brand {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	text-align: center;
-	margin-left: -50px;
+	margin-left: -30px;
 }
 .well {
 	background-color: black;
 }
 .well.sidebar-nav{
-		color: white;
+		color: grey;
 }
  .nav-list li {
 		color: grey;
 }
 .nav-list li a {
 		color: #74E600;
+}
+footer {
+   margin-top: 50px;
 }
