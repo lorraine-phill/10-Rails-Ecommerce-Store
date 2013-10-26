@@ -5,11 +5,11 @@ Rails E-commerce Website
 
 Functionality: 
 - Add, edit and delete products from catalog
-- Implement user authenticatioln (includes user sign-up and login)
+- Implement user authenticatioln (includes sign-up and login)
 - Add, edit and delete items from cart
-- Generate user total price from items purchased
-- Incorporate ability to accept credit card payments
-- Setup email so order conformation email can be sent to a customer
+- Calculate user total from items purchased
+- Accept credit card payments
+- Setup email for order conformation
 
 Technologies:
 - Rspec/ Capybara tests: Created feature specs and model specs
