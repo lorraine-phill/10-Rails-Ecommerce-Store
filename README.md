@@ -1,7 +1,5 @@
-Rails E-commerce Website Site
-=======================
-
-Project: Create an e-commerce site in Ruby on Rails
+Rails E-commerce Website
+========================
 
 ![alt text](https://s3.amazonaws.com/Github-14/iStore.png "E-commerce Website - Ruby on Rails")
 
