@@ -5,14 +5,14 @@ Rails E-commerce Website
 
 Functionality: 
 - Add, edit and delete products from catalog
-- Implement user authenticatioln (includes sign-up and login)
+- Implement user authenticatioln (includes user sign-up and login)
 - Add, edit and delete items from cart
-- Calculate user total from items purchased
+- Calculate user total from purchased items 
 - Accept credit card payments
 - Setup email for order conformation
 
 Technologies:
-- Rspec/ Capybara tests: Created feature specs and model specs
+- Rspec/ Capybara tests: Created both feature and model spec tests
 - Rails 4.0
 - Ruby 2.0
 - Postgres database
@@ -22,5 +22,6 @@ Technologies:
 - Mail functionality (Mailgun)
 - User login (Devise)
 - Credit card payment (Stripe)
+- Images hosted on Amazon AWS
 
 
