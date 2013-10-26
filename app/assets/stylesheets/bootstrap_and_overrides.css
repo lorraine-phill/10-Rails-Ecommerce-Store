@@ -6,8 +6,6 @@
   =require twitter-bootstrap-static/fontawesome
   */
 
-
-
 .navbar {
 	background-color: black;
 }
@@ -42,4 +40,8 @@
 }
 footer {
    margin-top: 50px;
+}
+.wrapup {
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
