@@ -1,7 +1,7 @@
 Rails E-commerce Website
 ========================
 
-![alt text](https://s3.amazonaws.com/Github-14/iStore.png "E-commerce Website - Ruby on Rails")
+![alt text](https://s3.amazonaws.com/Github-14/iStore-1.png "E-commerce Website - Ruby on Rails")
 
 Functionality: 
 - Add, edit and delete products from catalog
