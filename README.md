@@ -7,7 +7,7 @@ Project: Create an e-commerce site in Ruby on Rails
 
 Functionality: 
 - Add, edit and delete products from catalog
-- Implement user sign-up and login
+- Implement user authenticatioln (includes user sign-up and login)
 - Add, edit and delete items from cart
 - Generate user total price from items purchased
 - Incorporate ability to accept credit card payments
