@@ -19,6 +19,7 @@ Technologies:
 - HTML5
 - CSS3
 - Twitter bootstrap
+- Factory girl
 - Mail functionality (Mailgun)
 - User login (Devise)
 - Credit card payment (Stripe)
